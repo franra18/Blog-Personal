@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "Sobre mí";
+
+const identity = {
+  name: "LOL",
+  role: "Web Developer",
+  bio: "I am a passionate web developer with experience in building modern web applications using Astro and other web technologies. I enjoy learning new things and sharing my knowledge with the community.",
+  hobbies: ["Coding", "Reading", "Traveling", "Photography"],
+}
+
+const skills = ["HTML", "CSS", "JavaScript", "Astro", "React", "Node.js"];
+
+const happy = true;
+const finished = true;
+const goal = 3;
+
+const skillColor = "crimson";
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+        <style is:global define:vars={{skillColor, fontWeight, textCase}}>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill { /* Si se trata de una clase tenemos que poner el . delante */
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase);
+            }
+        </style>
+
+        <h2>... y mi nuevo sitio con Astro!</h2>
+
+        <p>Estoy siguiendo el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web y la primera que he construido yo mismo.</p>
+
+        <p>Este sitio se actualizará a medida que complete más del tutorial, así que vuelve a visitarlo para ver cómo avanza mi recorrido.</p>
+
+        <p>Aquí tienes algunos datos sobre mí:</p>
+        <ul>
+            <li><strong>Name:</strong> {identity.name}</li>
+            <li><strong>Role:</strong> {identity.role}</li>
+            <li><strong>Bio:</strong> {identity.bio}</li>
+            {identity.hobbies.length >= 2 &&
+            <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+            }
+        </ul>
+
+        <h3>Habilidades</h3>
+        <ul>
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
+        </ul>
+
+        {happy && <p>¡Me encanta aprender Astro!</p>} <!-- Uso de && para mostrar el elemento si la condición es verdadera -->
+        {goal === 3 ? <p>Mi objetivo es terminarlo en 3 días</p> : <p>No tengo como objetivo terminarlo en 3 días</p>}
+        {finished && <p>¡He terminado el tutorial!</p>}
+</BaseLayout>
