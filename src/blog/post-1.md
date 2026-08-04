@@ -4,7 +4,7 @@ pubDate: 2026-08-04
 description: 'Esta es la primera entrada de mi nuevo blog con Astro.'
 image: 
     url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'Una rosa hermosa'
+    alt: 'Icono de la tecnología Astro con fondo difuminado'
 tags: ['Agenda', 'Blog Astro']
 ---
 
