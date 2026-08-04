@@ -1,5 +1,4 @@
 Por hacer:
-· Cambiar nombre de tags por projects en el editor
 · Completar contenido inicio (añadir apartado sobre mí)
 · Ordenar entradas del apartado "Blog" por fecha de publicación
 · Integrar Tailwind CSS
@@ -10,4 +9,4 @@ Por hacer:
 · Añadir favicon
 
 Hecho:
-
+· Cambiar nombre de tags por projects en el editor
