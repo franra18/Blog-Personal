@@ -3,8 +3,8 @@ title: 'Primera entrada del blog'
 pubDate: 2026-08-04
 description: 'Esta es la primera entrada de mi nuevo blog con Astro.'
 image: 
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'Icono de la tecnología Astro con fondo difuminado'
+    url: 'https://www.webtutoriales.com/_astro/astro-js.B1AzQgTM_kGNv3.webp'
+    alt: 'Icono de la tecnología Astro con fondo estrellado'
 tags: ['Blog Astro']
 ---
 
