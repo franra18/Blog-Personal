@@ -1,5 +1,5 @@
 ---
-title: 'Primera entrada del blog'
+title: 'Introducción al blog'
 pubDate: 2026-08-04
 description: 'Esta es la primera entrada de mi nuevo blog con Astro.'
 image: 
