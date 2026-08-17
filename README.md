@@ -1,43 +1,36 @@
-# Astro Starter Kit: Minimal
+# Blog Personal
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+Sitio web y blog personal desarrollado con [Astro](https://astro.build/), diseñado para ser rápido, accesible, modular y fácil de mantener. Incluye gestión de artículos en Markdown, catálogo de proyectos, generación de feed RSS y soporte para modo claro/oscuro.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## Características
 
-Inside of your Astro project, you'll see the following folders and files:
+- ⚡ **Rendimiento ultra rápido:** Construido sobre Astro con arquitectura de islas de componentes.
+- 📝 **Blog en Markdown:** Gestión de publicaciones mediante *Content Collections* (`src/content.config.ts` y `src/blog/`).
+- 💼 **Sección de Proyectos:** Páginas dinámicas para mostrar proyectos y portafolio (`/projects/[project]`).
+- 🌓 **Modo Oscuro / Claro:** Alternador de tema integrado (`ThemeIcon.astro`).
+- 📡 **Feed RSS:** Generación automática de feed para lectores de noticias (`/rss.xml`).
+- 🎨 **Estilos modulares:** Configuración con soporte para Tailwind CSS y estilos globales (`global.css`).
+- 📱 **Diseño responsivo:** Menú adaptable para dispositivos móviles[cite: 1].
+
+---
+
+## Estructura del Proyecto
 
 ```text
-/
-├── public/
+Blog-Personal/
+├── public/                 # Archivos estáticos (favicon, sprites SVG, imágenes)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+│   ├── blog/               # Artículos y publicaciones en Markdown
+│   ├── components/         # Componentes reutilizables (Header, Footer, Menu, etc.)
+│   ├── layouts/            # Plantillas base y layouts para posts
+│   ├── pages/              # Rutas y páginas del sitio (index, blog, projects, rss)
+│   ├── scripts/            # Scripts del cliente (interactividad, menú móvil)
+│   ├── styles/             # Estilos globales y utilidades CSS
+│   └── content.config.ts   # Configuración y esquemas de colecciones de contenido
+├── astro.config.mjs        # Configuración principal de Astro
+├── package.json            # Dependencias y scripts del proyecto
+├── pnpm-lock.yaml          # Bloqueo de versiones de paquetes
+├── tsconfig.json           # Configuración de TypeScript
+└── tareas.md               # Notas de desarrollo y tareas pendientes

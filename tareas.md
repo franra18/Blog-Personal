@@ -10,4 +10,4 @@ Por hacer:
 - [ ] Añadir opción de idioma para mostrar el contenido en inglés (agrupar con modo oscuro arriba a la derecha por ejemplo)
 - [ ] Agrupar en el editor las entradas de blog por carpetas de proyectos
 - [x] Añadir favicon
-- [ ] Actualizar README del repositorio
+- [x] Actualizar README del repositorio
