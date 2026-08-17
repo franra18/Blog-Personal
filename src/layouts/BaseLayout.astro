@@ -17,7 +17,7 @@ const {pageTitle} = Astro.props; /* Importante poner los corchetes alrededor del
 	</head>
 	<body>
 		<Header />
-		<h1>{pageTitle}</h1>
+		<h1 class="text-4xl font-bold mt-4">{pageTitle}</h1>
         <slot /> <!-- slots allow you to inject child content written between the opening and closing tags of the layout -->
 		<Footer />
 		<script>
