@@ -8,7 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://my-astro-site.com", // TODO: Add your site URL in the quotes
+  site: "https://franra18.github.io/Blog-Personal",
   integrations: [preact()],
   markdown: {
     rehypePlugins: [[rehypeExternalLinks, { target: '_blank', rel: [] }]],
