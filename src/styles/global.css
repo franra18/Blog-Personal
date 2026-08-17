@@ -3,61 +3,29 @@
 
 @layer base {
     html {
-        background-color: #f1f5f9;
-        font-family: sans-serif;
+        @apply bg-amber-50 font-sans
     }
 
     body {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 80ch;
-        padding: 1rem;
-        line-height: 1.5;
+        @apply mx-auto w-full max-w-prose p-4 leading-normal
     }
 
     * {
-        box-sizing: border-box;
-    }
-
-    h1 {
-        margin: 1rem 0;
-        font-size: 2.5rem;
+        @apply box-border
     }
 }
 
 @layer components {
     /* Navigation styles */
 
-    .menu {
-        background-color: #0d0950;
-        color: #fff;
-        border: none;
-        padding: 5px 10px;
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    .nav-links {
-        width: 100%;
-        display: none;
-        margin: 0;
-    }
-
     .nav-links a {
-        display: block;
-        text-align: center;
-        padding: 10px 0;
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #0d0950;
-        border-radius: 40px;
+        @apply block text-center py-2 text-lg font-bold no-underline uppercase text-indigo-950 rounded-full
+
     }
 
     .nav-links a:hover,
     .nav-links a:focus {
-        background-color: lightblue;
+        @apply bg-blue-200
     }
 
     :has(.menu[aria-expanded="true"]) .nav-links {
@@ -66,20 +34,15 @@
 
     @media screen and (min-width: 636px) {
         .nav-links {
-            margin-left: 5em;
-            display: block;
-            position: static;
-            width: auto;
-            background: none;
+            @apply ml-0.5 block static w-auto bg-transparent 
         }
 
         .nav-links a {
-            display: inline-block;
-            padding: 15px 20px;
+            @apply inline-block px-5
         }
 
         .menu {
-            display: none;
+            @apply hidden
         }
     }
 
