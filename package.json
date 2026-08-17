@@ -1,5 +1,5 @@
 {
-  "name": "tutorial",
+  "name": "blog-personal",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -20,5 +20,8 @@
     "preact": "^10.29.3",
     "rehype-external-links": "^3.0.0",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0"
   }
 }
