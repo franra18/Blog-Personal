@@ -1,0 +1,18 @@
+---
+const socials = [
+    { platform: 'GitHub', placeholder: 'franra18', url:'https://github.com/franra18' },
+    { platform: 'LinkedIn', placeholder: 'Francisco Ramírez Cañadas', url:'https://www.linkedin.com/in/francisco-ramirez-canadas' },
+    { platform: 'Gmail', placeholder: 'franciscoramirezcanadas@gmail.com', url:'https://mail.google.com/mail/?view=cm&fs=1&to=franciscoramirezcanadas@gmail.com' }
+];
+---
+
+<div class="flex justify-center gap-4 mt-15">
+	{socials.map((social) => (
+		<a class="border-black border bg-white p-2 size-10 xs:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform animate-slide-up-fade" href={social.url} target="_blank"
+            aria-label={social.platform} title={`${social.platform} | ${social.placeholder}`}>
+            <svg>
+                <use href={`/assets/sprite.svg#${social.platform}`} />
+            </svg>
+        </a>
+	))}
+</div>
