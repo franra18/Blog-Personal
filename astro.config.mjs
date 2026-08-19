@@ -9,10 +9,10 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://franra18.github.io',
-  base: process.env.NODE_ENV === 'production' ? '/Blog-Personal/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/blog/' : '/',
   integrations: [preact()],
   markdown: {
-    rehypePlugins: [[rehypeExternalLinks, { target: '_blank', rel: [] }]],
+    rehypePlugins: [[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]],
   },
   vite: {
     plugins: [tailwindcss()],
