@@ -36,7 +36,6 @@ Esto genera un problema inmediato con los enlaces relativos a la raíz. Si en co
 ```html
 <!-- Esto busca en https://<usuario>.github.io/blog/ -->
 <a href="/blog/">Blog</a>
-<a href="/projects/">Proyectos</a>
 
 ```
 
@@ -64,7 +63,7 @@ export default defineConfig({
 
 ### Actualizar el enrutado en todos los componentes
 
-Una vez declarada la propiedad *base*, Astro expone la variable `import.meta.env.BASE_URL`, que contiene la ruta base configurada (o `/` en caso de no haberse definido).
+Una vez declarada la propiedad *base*, Astro expone la variable `import.meta.env.BASE_URL`, que contiene la ruta base configurada.
 
 Tuve que refactorizar los componentes de la interfaz (como `Navigation.astro`, `BlogPost.astro` o las páginas de listados) para anteponer siempre esta variable a las rutas internas:
 
