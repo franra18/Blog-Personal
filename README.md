@@ -1,6 +1,6 @@
 # Blog Personal
 
-Sitio web y blog personal desarrollado con [Astro](https://astro.build/), diseñado para ser rápido, accesible, modular y fácil de mantener. Incluye gestión de artículos en Markdown, catálogo de proyectos, generación de feed RSS y soporte para modo claro/oscuro.
+Este blog es un espacio personal para compartir aprendizajes, experiencias y reflexiones sobre desarrollo web, además de documentar proyectos y recursos útiles. Su objetivo es convertir el proceso de aprender y crear en contenido que pueda servir como referencia para otras personas. Está desarrollado con [Astro](https://astro.build/) para ofrecer una experiencia rápida, accesible y fácil de mantener.
 
 ---
 
@@ -19,7 +19,7 @@ Sitio web y blog personal desarrollado con [Astro](https://astro.build/), diseñ
 ## Estructura del Proyecto
 
 ```text
-Blog-Personal/
+blog/
 ├── public/                 # Archivos estáticos (favicon, sprites SVG, imágenes)
 ├── src/
 │   ├── blog/               # Artículos y publicaciones en Markdown
