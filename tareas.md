@@ -13,3 +13,4 @@ Por hacer:
 - [x] Añadir favicon
 - [x] Actualizar README del repositorio
 - [ ] Arreglar dependencias deprecadas (@astrojs/markdown-remark)
+- [ ] Definir un documento dentro de la carpeta de cada proyecto con la información de cada proyecto (nombre, descripción, tecnologías, enlaces, entradas del blog etc.) y que se muestre en la página de cada proyecto
