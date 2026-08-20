@@ -10,7 +10,7 @@ const pageTitle = "Proyectos";
 <BaseLayout pageTitle={pageTitle}>
   <div class="tags">
     {tags.map((project: string) => (
-      <p class="tag"><a href={`${import.meta.env.BASE_URL}/projects/${project}`}>{project}</a></p>
+      <p class="tag"><a href={`${import.meta.env.BASE_URL}projects/${project}`}>{project}</a></p>
     ))}
   </div>
 </BaseLayout>
