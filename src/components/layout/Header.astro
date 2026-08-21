@@ -1,12 +1,12 @@
 ---
 import Navigation from './Navigation.astro';
 import Menu from './Menu.astro';
-import ThemeIcon from './ThemeIcon.astro';
+import ThemeIcon from '../ui/ThemeIcon.astro';
 ---
 
-<header>
+<header class="border-b border-zinc-700 mb-10">
     <nav>
-        <div class="flex justify-between">
+        <div class="flex justify-end items-center">
             <Menu />
             <Navigation />
             <ThemeIcon />            
