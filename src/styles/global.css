@@ -7,7 +7,7 @@
     }
 
     body {
-        @apply mx-auto w-full max-w-prose p-4 leading-normal
+        @apply mx-auto w-full p-4 leading-normal font-serif
     }
 
     * {
@@ -15,17 +15,14 @@
     }
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer components {
     /* Navigation styles */
 
     .nav-links a {
-        @apply block text-center py-2 text-lg font-bold no-underline uppercase text-indigo-950 rounded-full
+        @apply py-2 text-lg font-bold  text-zinc-500 hover:text-black dark:text-zinc-500 dark:hover:text-white
 
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus {
-        @apply bg-blue-200
     }
 
     :has(.menu[aria-expanded="true"]) .nav-links {
@@ -38,7 +35,7 @@
         }
 
         .nav-links a {
-            @apply inline-block px-5
+            @apply inline-block px-3
         }
 
         .menu {
@@ -46,9 +43,12 @@
         }
     }
 
+    a {
+        @apply no-underline
+    }
+
     html.dark {
-        background-color: #252526;
-        color: #fff;
+        @apply bg-zinc-950 text-white
     }
 
     .dark .menu {
@@ -56,16 +56,4 @@
         color: #000;
     }
 
-    .dark .nav-links a:hover,
-    .dark .nav-links a:focus {
-        color: #0d0950;
-    }
-
-    .dark .nav-links a {
-        color: #fff;
-    }
-
-    .dark a {
-        color: #ff9776;
-    }
 }

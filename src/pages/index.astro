@@ -1,11 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
 
 const pageTitle = "Inicio";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>Francisco Ramírez Cañadas</h2>
-	<h3>Ingeniero de Software | Entusiasta de la Tecnología</h3>
-	<p>Graduado en la Universidad de Málaga. Este blog es mi cuaderno de bitácora donde publico proyectos personales, soluciones técnicas y todo lo que voy descubriendo en el mundo del desarrollo de software.</p>
+	<Hero />
 </BaseLayout>
